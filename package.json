@@ -20,12 +20,12 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/linjiezhang7-blip/pi-winfs-bridge.git"
+		"url": "git+https://github.com/linji3/pi-winfs-bridge.git"
 	},
 	"bugs": {
-		"url": "https://github.com/linjiezhang7-blip/pi-winfs-bridge/issues"
+		"url": "https://github.com/linji3/pi-winfs-bridge/issues"
 	},
-	"homepage": "https://github.com/linjiezhang7-blip/pi-winfs-bridge#readme",
+	"homepage": "https://github.com/linji3/pi-winfs-bridge#readme",
 	"files": [
 		"extensions",
 		"README.md",

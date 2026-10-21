@@ -44,19 +44,19 @@ WSL2 通过 9p/Plan9（drvfs）把 Windows 磁盘挂到 `/mnt/c`、`/mnt/d`…�
 ### 方式一：从 git 源安装（发布后）
 
 ```bash
-pi install git:github.com/YOUR-GITHUB-USERNAME/pi-winfs-bridge
+pi install git:github.com/linjiezhang7-blip/pi-winfs-bridge
 ```
 
 固定到某个版本：
 
 ```bash
-pi install git:github.com/YOUR-GITHUB-USERNAME/pi-winfs-bridge@v1.0.0
+pi install git:github.com/linjiezhang7-blip/pi-winfs-bridge@v1.0.0
 ```
 
 ### 方式二：从本地目录安装
 
 ```bash
-git clone https://github.com/YOUR-GITHUB-USERNAME/pi-winfs-bridge
+git clone https://github.com/linjiezhang7-blip/pi-winfs-bridge
 pi install ./pi-winfs-bridge
 ```
 
@@ -149,7 +149,7 @@ touch ~/.pi/agent/winfs-bridge.disabled
 ## 开发与测试
 
 ```bash
-git clone https://github.com/YOUR-GITHUB-USERNAME/pi-winfs-bridge
+git clone https://github.com/linjiezhang7-blip/pi-winfs-bridge
 cd pi-winfs-bridge
 npm test        # 全量回归（需要在 Windows 盘上建临时目录跑）
 npm run bench   # 9p vs 桥接测速

@@ -1,6 +1,6 @@
 {
 	"name": "pi-winfs-bridge",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Make Windows drives fast for Pi running inside WSL2: routes read/edit/ls/find/grep through a native Windows helper instead of drvfs/9p.",
 	"type": "module",
 	"keywords": [

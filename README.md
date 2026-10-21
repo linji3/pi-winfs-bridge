@@ -41,7 +41,15 @@ WSL2 通过 9p/Plan9（drvfs）把 Windows 磁盘挂到 `/mnt/c`、`/mnt/d`…�
 
 ## 安装
 
-### 方式一：从 git 源安装（发布后）
+### 方式一：从 npm 安装（推荐）
+
+```bash
+pi install npm:pi-winfs-bridge
+```
+
+固定版本：`pi install npm:pi-winfs-bridge@1.0.1`
+
+### 方式二：从 git 源安装
 
 ```bash
 pi install git:github.com/linji3/pi-winfs-bridge
@@ -53,14 +61,14 @@ pi install git:github.com/linji3/pi-winfs-bridge
 pi install git:github.com/linji3/pi-winfs-bridge@v1.0.0
 ```
 
-### 方式二：从本地目录安装
+### 方式三：从本地目录安装
 
 ```bash
 git clone https://github.com/linji3/pi-winfs-bridge
 pi install ./pi-winfs-bridge
 ```
 
-### 方式三：手动放进去
+### 方式四：手动放进去
 
 ```bash
 mkdir -p ~/.pi/agent/extensions/winfs-bridge

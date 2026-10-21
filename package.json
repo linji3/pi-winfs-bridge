@@ -1,0 +1,62 @@
+{
+	"name": "pi-winfs-bridge",
+	"version": "1.0.0",
+	"description": "Make Windows drives fast for Pi running inside WSL2: routes read/edit/ls/find/grep through a native Windows helper instead of drvfs/9p.",
+	"type": "module",
+	"keywords": [
+		"pi-package",
+		"pi",
+		"pi-coding-agent",
+		"extension",
+		"wsl",
+		"wsl2",
+		"windows",
+		"drvfs",
+		"9p",
+		"filesystem",
+		"performance"
+	],
+	"author": "linji",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/YOUR-GITHUB-USERNAME/pi-winfs-bridge.git"
+	},
+	"bugs": {
+		"url": "https://github.com/YOUR-GITHUB-USERNAME/pi-winfs-bridge/issues"
+	},
+	"homepage": "https://github.com/YOUR-GITHUB-USERNAME/pi-winfs-bridge#readme",
+	"files": [
+		"extensions",
+		"README.md",
+		"LICENSE"
+	],
+	"engines": {
+		"node": ">=22.19.0"
+	},
+	"scripts": {
+		"test": "node tests/run.mjs",
+		"bench": "node tests/bench.mjs",
+		"selftest": "node tests/selftest.mjs"
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-coding-agent": "*",
+		"typebox": "*"
+	},
+	"peerDependenciesMeta": {
+		"@earendil-works/pi-coding-agent": {
+			"optional": true
+		},
+		"typebox": {
+			"optional": true
+		}
+	},
+	"devDependencies": {
+		"jiti": "^2.0.0"
+	},
+	"pi": {
+		"extensions": [
+			"./extensions/winfs-bridge/index.ts"
+		]
+	}
+}
